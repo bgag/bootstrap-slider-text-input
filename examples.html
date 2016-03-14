@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>bootstrap-slider-text-input</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css">
+
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
+
+  <!-- bootstrap-slider-text-input -->
+  <link rel="stylesheet" href="dist/css/bootstrap-slider-text-input.css">
+  <script src="dist/js/bootstrap-slider-text-input.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-offset-2 col-lg-8 col-xs-12">
+        <h1>bootstrap-slider-text-input</h1>
+        <p>
+          Text inputs for <a href="https://github.com/seiyria/bootstrap-slider">bootstrap-slider</a>.
+        </p>
+
+        <div class="form-group">
+          <label>input right</label>
+          <div class="input-group slider-with-input">
+            <input id="slider-right" type="text" data-slider-min="1999" data-slider-max="2016" data-slider-step="1" data-slider-value="2015" data-slider-tooltip="hide"/>
+            <span class="slider-input-right">
+              <input type="text" class="form-control">
+            </span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>input left</label>
+          <div class="input-group slider-with-input">
+            <span class="slider-input-left">
+              <input type="text" class="form-control">
+            </span>
+            <input id="slider-left" type="text" data-slider-min="1999" data-slider-max="2016" data-slider-step="1" data-slider-value="2015" data-slider-tooltip="hide"/>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-3">
+            <div class="form-group">
+              <label>range with input left and right</label>
+              <div class="input-group slider-with-input">
+                <input id="slider-range" type="text" data-slider-min="1900" data-slider-max="2016" data-slider-step="1" data-slider-value="[1980,2012]" data-slider-tooltip="hide"/>
+              </div>
+              <div class="slider-input-line">
+                <span class="slider-input-left">
+                  <input type="text" class="form-control">
+                </span>
+                <span class="slider-input-right">
+                  <input type="text" class="form-control">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-2">
+            <div class="form-group">
+              <label>input bottom</label>
+              <div class="input-group slider-with-input">
+                <input id="slider-bottom" type="text" data-slider-min="1999" data-slider-max="2016" data-slider-step="1" data-slider-value="2010" data-slider-tooltip="hide"/>
+              </div>
+              <span class="slider-input-bottom">
+                <input type="text" class="form-control">
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-3">
+            <div class="form-group">
+              <label>range with input bottom input line</label>
+              <div class="input-group slider-with-input">
+                <input id="slider-line" type="text" data-slider-min="1999" data-slider-max="2016" data-slider-step="1" data-slider-value="[2005,2012]" data-slider-tooltip="hide"/>
+              </div>
+              <div class="slider-input-line">
+              <span class="slider-input-left">
+                <input type="text" class="form-control">
+              </span>
+              <span class="slider-input-right">
+                <input type="text" class="form-control">
+              </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          $('#slider-right').slider()
+          $('#slider-right').sliderTextInput()
+
+          $('#slider-left').slider()
+          $('#slider-left').sliderTextInput()
+
+          $('#slider-range').slider()
+          $('#slider-range').sliderTextInput()
+
+          $('#slider-bottom').slider()
+          $('#slider-bottom').sliderTextInput()
+
+          $('#slider-line').slider()
+          $('#slider-line').sliderTextInput()
+        </script>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "bootstrap-slider-text-input",
+  "version": "0.1.0",
+  "description": "Text inputs for bootstrap-slider",
+  "main": "dist/js/bootstrap-slider-text-input.js",
+  "style": "dist/css/bootstrap-slider-text-input.css",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bgag/bootstrap-slider-text-input.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "slider",
+    "input",
+    "text"
+  ],
+  "author": "Thomas Bergwinkl <bergi@axolotlfarm.org> (https://www.bergnet.org/people/bergi/card#me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgag/bootstrap-slider-text-input/issues"
+  },
+  "homepage": "https://github.com/bgag/bootstrap-slider-text-input",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-uglify": "^1.0.0"
+  }
+}
